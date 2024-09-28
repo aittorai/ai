@@ -1,0 +1,54 @@
+# Copyright (c) 2023 APP Development Team
+
+aittor: &aittor
+    image: "local/aittor:latest"
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    # Create a .env file in the same directory as this docker-compose.yml file
+    # and populate it with environment variables. See .env.sample
+    env_file:
+      - .env
+
+    # variables without a default will automatically inherit from the host environment
+    environment:
+      # if set, CONTAINER_APP_ROOT will override the app runtime directory location *inside* the container
+      - APP_ROOT=${CONTAINER_APP_ROOT:-/aittor}
+      - HF_HOME
+    ports:
+      - "${APP_PORT:-9090}:${APP_PORT:-9090}"
+    volumes:
+      - type: bind
+        source: ${HOST_APP_ROOT:-${APP_ROOT:-~/aittor}}
+        target: ${CONTAINER_APP_ROOT:-/aittor}
+        bind:
+          create_host_path: true
+      - ${HF_HOME:-~/.cache/huggingface}:${HF_HOME:-/aittor/.cache/huggingface}
+    tty: true
+    stdin_open: true
+
+
+services:
+  aittor-cuda:
+    <<: *aittor
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  aittor-cpu:
+    <<: *aittor
+    profiles:
+      - cpu
+
+  aittor-rocm:
+    <<: *aittor
+    devices:
+      - /dev/kfd:/dev/kfd
+      - /dev/dri:/dev/dri
+    profiles:
+      - rocm
