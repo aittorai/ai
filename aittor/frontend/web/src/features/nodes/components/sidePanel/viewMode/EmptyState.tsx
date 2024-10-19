@@ -72,12 +72,5 @@ export const EmptyState = () => {
 };
 
 const workflowHelpTextComponents = {
-  LinkComponent: (
-    <Link
-      fontSize="md"
-      fontWeight="semibold"
-      href="https://support.aittor.com/support"
-      target="_blank"
-    />
-  ),
+  LinkComponent: <Link fontSize="md" fontWeight="semibold" href="https://support.aittor.com/support" target="_blank" />,
 };

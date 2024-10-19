@@ -23,16 +23,7 @@ const AppLogoComponent = () => {
 
   return (
     <Tooltip placement="right" label={tooltip} p={1} px={2} gutter={16}>
-      <Image
-        ref={ref}
-        src={AppLogoYellow}
-        alt="app-logo"
-        w="24px"
-        h="24px"
-        minW="24px"
-        minH="24px"
-        userSelect="none"
-      />
+      <Image ref={ref} src={AppLogoYellow} alt="app-logo" w="24px" h="24px" minW="24px" minH="24px" userSelect="none" />
     </Tooltip>
   );
 };

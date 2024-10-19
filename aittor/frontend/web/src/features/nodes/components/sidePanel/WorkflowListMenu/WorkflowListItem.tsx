@@ -111,13 +111,7 @@ export const WorkflowListItem = ({ workflow }: { workflow: WorkflowRecordListIte
             <Text noOfLines={2}>{workflow.name}</Text>
 
             {isActive && (
-              <Badge
-                color="appBlue.400"
-                borderColor="appBlue.700"
-                borderWidth={1}
-                bg="transparent"
-                flexShrink={0}
-              >
+              <Badge color="appBlue.400" borderColor="appBlue.700" borderWidth={1} bg="transparent" flexShrink={0}>
                 {t('workflows.opened')}
               </Badge>
             )}

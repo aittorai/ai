@@ -1,6 +1,6 @@
+import { Flex, Icon, IconButton, Spacer, Tooltip } from '@aittorai/ui-library';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import { Flex, Icon, IconButton, Spacer, Tooltip } from '@aittorai/ui-library';
 import { useAppDispatch } from 'app/store/storeHooks';
 import NodeSelectionOverlay from 'common/components/NodeSelectionOverlay';
 import { InvocationInputFieldCheck } from 'features/nodes/components/flow/nodes/Invocation/fields/InvocationFieldCheck';

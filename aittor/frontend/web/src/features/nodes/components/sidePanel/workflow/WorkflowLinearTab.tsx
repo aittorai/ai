@@ -1,5 +1,5 @@
-import { arrayMove } from '@dnd-kit/sortable';
 import { Box, Flex } from '@aittorai/ui-library';
+import { arrayMove } from '@dnd-kit/sortable';
 import { createMemoizedSelector } from 'app/store/createMemoizedSelector';
 import { useAppDispatch, useAppSelector } from 'app/store/storeHooks';
 import { IAINoContentFallback } from 'common/components/IAIImageFallback';

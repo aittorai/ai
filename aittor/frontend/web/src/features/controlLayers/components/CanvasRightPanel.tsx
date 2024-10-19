@@ -1,5 +1,5 @@
-import { useDndContext } from '@dnd-kit/core';
 import { Box, Button, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs } from '@aittorai/ui-library';
+import { useDndContext } from '@dnd-kit/core';
 import { useAppDispatch, useAppSelector } from 'app/store/storeHooks';
 import IAIDropOverlay from 'common/components/IAIDropOverlay';
 import { CanvasLayersPanelContent } from 'features/controlLayers/components/CanvasLayersPanelContent';

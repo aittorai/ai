@@ -1,13 +1,4 @@
-import {
-  Button,
-  Divider,
-  Flex,
-  Heading,
-  IconButton,
-  Input,
-  InputGroup,
-  InputRightElement,
-} from '@aittorai/ui-library';
+import { Button, Divider, Flex, Heading, IconButton, Input, InputGroup, InputRightElement } from '@aittorai/ui-library';
 import ScrollableContent from 'common/components/OverlayScrollbars/ScrollableContent';
 import { useInstallModel } from 'features/modelManagerV2/hooks/useInstallModel';
 import type { ChangeEventHandler } from 'react';

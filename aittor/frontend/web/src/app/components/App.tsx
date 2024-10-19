@@ -90,14 +90,7 @@ const App = ({ config = DEFAULT_CONFIG, studioInitAction }: Props) => {
 
   return (
     <ErrorBoundary onReset={handleReset} FallbackComponent={AppErrorBoundaryFallback}>
-      <Box
-        id="app-wrapper"
-        w="100dvw"
-        h="100dvh"
-        position="relative"
-        overflow="hidden"
-        {...dropzone.getRootProps()}
-      >
+      <Box id="app-wrapper" w="100dvw" h="100dvh" position="relative" overflow="hidden" {...dropzone.getRootProps()}>
         <input {...dropzone.getInputProps()} />
         <AppContent />
         {dropzone.isDragActive && isHandlingUpload && (

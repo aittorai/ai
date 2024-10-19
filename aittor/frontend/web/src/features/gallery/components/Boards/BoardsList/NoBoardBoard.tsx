@@ -79,12 +79,9 @@ const NoBoardBoard = memo(({ isSelected }: Props) => {
             >
               <Flex w="10" justifyContent="space-around">
                 {/* iconified from public/assets/images/app-symbol-wht-lrg.svg */}
-              <Icon boxSize={8} opacity={1} stroke="base.500" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M4 14h8v7l8-11h-8V3z"
-                  strokeWidth="2"
-                />
-              </Icon>
+                <Icon boxSize={8} opacity={1} stroke="base.500" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 14h8v7l8-11h-8V3z" strokeWidth="2" />
+                </Icon>
               </Flex>
 
               <Text

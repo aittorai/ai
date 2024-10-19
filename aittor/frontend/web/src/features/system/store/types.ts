@@ -1,10 +1,7 @@
 import type { LogLevel, LogNamespace } from 'app/logging/logger';
 import { z } from 'zod';
 
-const zLanguage = z.enum([
-  'en',
-  'zh_CN'
-]);
+const zLanguage = z.enum(['en', 'zh_CN']);
 export type Language = z.infer<typeof zLanguage>;
 export const isLanguage = (v: unknown): v is Language => zLanguage.safeParse(v).success;
 

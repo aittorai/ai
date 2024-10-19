@@ -5,19 +5,13 @@ import { CanvasManagerProviderGate } from 'features/controlLayers/contexts/Canva
 import { useImageViewer } from 'features/gallery/components/ImageViewer/useImageViewer';
 import { useClearQueue } from 'features/queue/components/ClearQueueConfirmationAlertDialog';
 import { QueueButtonTooltip } from 'features/queue/components/QueueButtonTooltip';
-import { useCancelCurrentQueueItem } from 'features/queue/hooks/useCancelCurrentQueueItem';
 import { useApp } from 'features/queue/hooks/useApp';
+import { useCancelCurrentQueueItem } from 'features/queue/hooks/useCancelCurrentQueueItem';
 import type { UsePanelReturn } from 'features/ui/hooks/usePanel';
 import { selectActiveTab } from 'features/ui/store/uiSelectors';
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  PiCircleNotchBold,
-  PiLightningFill,
-  PiSparkleFill,
-  PiTrashSimpleBold,
-  PiXBold,
-} from 'react-icons/pi';
+import { PiCircleNotchBold, PiLightningFill, PiSparkleFill, PiTrashSimpleBold, PiXBold } from 'react-icons/pi';
 import { TbSwitchHorizontal } from 'react-icons/tb';
 import { useGetQueueStatusQuery } from 'services/api/endpoints/queue';
 

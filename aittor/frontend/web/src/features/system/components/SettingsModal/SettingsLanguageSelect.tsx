@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 const optionsObject: Record<Language, string> = {
   en: 'English',
-  zh_CN: '简体中文'
+  zh_CN: '简体中文',
 };
 
 const options = map(optionsObject, (label, value) => ({ label, value }));

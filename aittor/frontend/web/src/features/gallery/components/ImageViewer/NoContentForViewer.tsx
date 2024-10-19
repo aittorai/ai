@@ -1,7 +1,7 @@
 import { Button, Divider, Flex, Spinner, Text } from '@aittorai/ui-library';
 import { useAppDispatch, useAppSelector } from 'app/store/storeHooks';
-import { IAINoContentFallback } from 'common/components/IAIImageFallback';
 import { AppLogoIcon } from 'common/components/AppLogoIcon';
+import { IAINoContentFallback } from 'common/components/IAIImageFallback';
 import { LOADING_SYMBOL, useHasImages } from 'features/gallery/hooks/useHasImages';
 import { $installModelsTab } from 'features/modelManagerV2/subpanels/InstallModels';
 import { useFeatureStatus } from 'features/system/hooks/useFeatureStatus';

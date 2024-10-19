@@ -96,13 +96,7 @@ export const StylePresetListItem = ({ preset }: { preset: StylePresetRecordWithI
               {preset.name}
             </Text>
             {activeStylePresetId === preset.id && (
-              <Badge
-                color="appBlue.400"
-                borderColor="appBlue.700"
-                borderWidth={1}
-                bg="transparent"
-                flexShrink={0}
-              >
+              <Badge color="appBlue.400" borderColor="appBlue.700" borderWidth={1} bg="transparent" flexShrink={0}>
                 {t('stylePresets.active')}
               </Badge>
             )}

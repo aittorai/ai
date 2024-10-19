@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  Icon,
-  IconButton,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Text,
-  Tooltip,
-} from '@aittorai/ui-library';
+import { Box, Flex, Icon, IconButton, Input, InputGroup, InputRightElement, Text, Tooltip } from '@aittorai/ui-library';
 import ScrollableContent from 'common/components/OverlayScrollbars/ScrollableContent';
 import { map, size } from 'lodash-es';
 import type { ChangeEventHandler } from 'react';

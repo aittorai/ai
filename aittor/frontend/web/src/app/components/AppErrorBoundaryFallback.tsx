@@ -23,19 +23,6 @@ const AppErrorBoundaryFallback = ({ error, resetErrorBoundary }: Props) => {
     });
   }, [error, t]);
 
-  const url = useMemo(() => {
-    if (isLocal) {
-      return newGithubIssueUrl({
-        user: 'aittorai',
-        repo: 'AI',
-        template: 'BUG_REPORT.yml',
-        title: `[bug]: ${error.name}: ${error.message}`,
-      });
-    } else {
-      return 'https://support.aittor.com/support';
-    }
-  }, [error.message, error.name, isLocal]);
-
   return (
     <Flex layerStyle="body" w="100dvw" h="100dvh" alignItems="center" justifyContent="center" p={4}>
       <Flex layerStyle="first" flexDir="column" borderRadius="base" justifyContent="center" gap={8} p={16}>
@@ -43,7 +30,6 @@ const AppErrorBoundaryFallback = ({ error, resetErrorBoundary }: Props) => {
           <Image src={AppLogoYellow} alt="app-logo" w="24px" h="24px" minW="24px" minH="24px" userSelect="none" />
           <Heading fontSize="2xl">{t('common.somethingWentWrong')}</Heading>
         </Flex>
-
         <Flex
           layerStyle="second"
           px={8}
@@ -64,7 +50,6 @@ const AppErrorBoundaryFallback = ({ error, resetErrorBoundary }: Props) => {
           <Button leftIcon={<PiCopyBold />} onClick={handleCopy}>
             {t('common.copyError')}
           </Button>
-
         </Flex>
       </Flex>
     </Flex>

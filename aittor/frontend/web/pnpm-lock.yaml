@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@aittorai/ui-library':
+    specifier: ^0.0.30
+    version: 0.0.30(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@fontsource-variable/inter@5.1.0)(@types/react@18.3.11)(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1)
   '@dagrejs/dagre':
     specifier: ^1.1.4
     version: 1.1.4
@@ -23,9 +26,6 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.1.0
     version: 5.1.0
-  '@aittorai/ui-library':
-    specifier: ^0.0.30
-    version: 0.0.30(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@fontsource-variable/inter@5.1.0)(@types/react@18.3.11)(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1)"
   '@nanostores/react':
     specifier: ^0.7.3
     version: 0.7.3(nanostores@0.11.3)(react@18.3.1)
@@ -83,9 +83,6 @@ dependencies:
   nanostores:
     specifier: ^0.11.3
     version: 0.11.3
-  new-github-issue-url:
-    specifier: ^1.0.0
-    version: 1.0.0
   overlayscrollbars:
     specifier: ^2.10.0
     version: 2.10.0
@@ -310,6 +307,82 @@ packages:
   /@adobe/css-tools@4.4.0:
     resolution: {integrity: sha512-Ff9+ksdQQB3rMncgqDK78uLznstjyfIf2Arnh22pW8kBpLs6rpKDwgnZT46hin5Hl1WzazzK64DOrhSwYpS7bQ==}
     dev: true
+
+  /@aittorai/eslint-config-react@0.0.23(eslint@8.57.1)(prettier@3.3.3)(typescript@5.6.2):
+    resolution: {integrity: sha512-VhVrFGY1htit7p7RqAcl6lniqApv9yOoVL9eDA1HoJJftfkId8FaSQDPSBV8m97rqbBuo0lgtQhL+HgIuE7btg==}
+    peerDependencies:
+      eslint: ^8.56.0
+      prettier: ^3.2.5
+      typescript: ^5.3.3
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.1)(typescript@5.6.2)
+      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.6.2)
+      eslint: 8.57.1
+      eslint-config-prettier: 9.1.0(eslint@8.57.1)
+      eslint-plugin-import: 2.30.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.1)
+      eslint-plugin-react: 7.37.1(eslint@8.57.1)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.1)
+      eslint-plugin-react-refresh: 0.4.12(eslint@8.57.1)
+      eslint-plugin-simple-import-sort: 12.1.1(eslint@8.57.1)
+      eslint-plugin-storybook: 0.8.0(eslint@8.57.1)(typescript@5.6.2)
+      eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.18.0)(eslint@8.57.1)
+      prettier: 3.3.3
+      typescript: 5.6.2
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+    dev: true
+
+  /@aittorai/prettier-config-react@0.0.13(prettier@3.3.3):
+    resolution: {integrity: sha512-1Zyf98mSfZyFa6tZ1M0wBmYt7CWdBBD7fLt69u5L5DaZzYzb7vve3/GBqyDD/REHq6GhuUdWHTOxKYpFrTtRWA==}
+    peerDependencies:
+      prettier: ^3.2.5
+    dependencies:
+      prettier: 3.3.3
+    dev: true
+
+  /@aittorai/ui-library@0.0.30(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@fontsource-variable/inter@5.1.0)(@types/react@18.3.11)(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-Gw64NmZBUq5WL9ogYdFtETHQHHU0h2u/UHEaijPEYuTmfKrB55C2LzuxlEJAsy7ZZh42EVGoRH1VKZQmHrD/Tg==}
+    peerDependencies:
+      '@fontsource-variable/inter': ^5.0.16
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      '@chakra-ui/anatomy': 2.3.4
+      '@chakra-ui/icons': 2.2.4(@chakra-ui/react@2.10.2)(react@18.3.1)
+      '@chakra-ui/layout': 2.3.1(@chakra-ui/system@2.6.2)(react@18.3.1)
+      '@chakra-ui/portal': 2.1.0(react-dom@18.3.1)(react@18.3.1)
+      '@chakra-ui/react': 2.10.2(@emotion/react@11.13.3)(@emotion/styled@11.13.0)(@types/react@18.3.11)(framer-motion@11.10.0)(react-dom@18.3.1)(react@18.3.1)
+      '@chakra-ui/styled-system': 2.11.2(react@18.3.1)
+      '@chakra-ui/theme-tools': 2.2.6(@chakra-ui/styled-system@2.11.2)(react@18.3.1)
+      '@emotion/react': 11.13.3(@types/react@18.3.11)(react@18.3.1)
+      '@emotion/styled': 11.13.0(@emotion/react@11.13.3)(@types/react@18.3.11)(react@18.3.1)
+      '@fontsource-variable/inter': 5.1.0
+      '@nanostores/react': 0.7.3(nanostores@0.11.3)(react@18.3.1)
+      chakra-react-select: 4.9.2(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/layout@2.3.1)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@emotion/react@11.13.3)(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)
+      framer-motion: 10.18.0(react-dom@18.3.1)(react@18.3.1)
+      lodash-es: 4.17.21
+      nanostores: 0.11.3
+      overlayscrollbars: 2.10.0
+      overlayscrollbars-react: 0.5.6(overlayscrollbars@2.10.0)(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-i18next: 15.0.2(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1)
+      react-icons: 5.3.0(react@18.3.1)
+      react-select: 5.8.0(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)
+    transitivePeerDependencies:
+      - '@chakra-ui/form-control'
+      - '@chakra-ui/icon'
+      - '@chakra-ui/media-query'
+      - '@chakra-ui/menu'
+      - '@chakra-ui/spinner'
+      - '@chakra-ui/system'
+      - '@types/react'
+      - i18next
+      - react-native
+      - supports-color
+    dev: false
 
   /@ampproject/remapping@2.3.0:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -1661,82 +1734,6 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
     dev: true
-
-  /@aittorai/eslint-config-react@0.0.23(eslint@8.57.1)(prettier@3.3.3)(typescript@5.6.2):
-    resolution: {integrity: sha512-VhVrFGY1htit7p7RqAcl6lniqApv9yOoVL9eDA1HoJJftfkId8FaSQDPSBV8m97rqbBuo0lgtQhL+HgIuE7btg==}
-    peerDependencies:
-      eslint: ^8.56.0
-      prettier: ^3.2.5
-      typescript: ^5.3.3
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.1)(typescript@5.6.2)
-      '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.6.2)
-      eslint: 8.57.1
-      eslint-config-prettier: 9.1.0(eslint@8.57.1)
-      eslint-plugin-import: 2.30.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.1)
-      eslint-plugin-react: 7.37.1(eslint@8.57.1)
-      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.1)
-      eslint-plugin-react-refresh: 0.4.12(eslint@8.57.1)
-      eslint-plugin-simple-import-sort: 12.1.1(eslint@8.57.1)
-      eslint-plugin-storybook: 0.8.0(eslint@8.57.1)(typescript@5.6.2)
-      eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.18.0)(eslint@8.57.1)
-      prettier: 3.3.3
-      typescript: 5.6.2
-    transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
-      - supports-color
-    dev: true
-
-  /@aittorai/prettier-config-react@0.0.13(prettier@3.3.3):
-    resolution: {integrity: sha512-1Zyf98mSfZyFa6tZ1M0wBmYt7CWdBBD7fLt69u5L5DaZzYzb7vve3/GBqyDD/REHq6GhuUdWHTOxKYpFrTtRWA==}
-    peerDependencies:
-      prettier: ^3.2.5
-    dependencies:
-      prettier: 3.3.3
-    dev: true
-
-  /@aittorai/ui-library@0.0.30(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@fontsource-variable/inter@5.1.0)(@types/react@18.3.11)(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-Gw64NmZBUq5WL9ogYdFtETHQHHU0h2u/UHEaijPEYuTmfKrB55C2LzuxlEJAsy7ZZh42EVGoRH1VKZQmHrD/Tg==}
-    peerDependencies:
-      '@fontsource-variable/inter': ^5.0.16
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      '@chakra-ui/anatomy': 2.2.2
-      '@chakra-ui/icons': 2.2.4(@chakra-ui/react@2.10.2)(react@18.3.1)
-      '@chakra-ui/layout': 2.3.1(@chakra-ui/system@2.6.2)(react@18.3.1)
-      '@chakra-ui/portal': 2.1.0(react-dom@18.3.1)(react@18.3.1)
-      '@chakra-ui/react': 2.10.2(@emotion/react@11.13.3)(@emotion/styled@11.13.0)(@types/react@18.3.11)(framer-motion@11.10.0)(react-dom@18.3.1)(react@18.3.1)
-      '@chakra-ui/styled-system': 2.9.2
-      '@chakra-ui/theme-tools': 2.1.2(@chakra-ui/styled-system@2.9.2)
-      '@emotion/react': 11.13.3(@types/react@18.3.11)(react@18.3.1)
-      '@emotion/styled': 11.13.0(@emotion/react@11.13.3)(@types/react@18.3.11)(react@18.3.1)
-      '@fontsource-variable/inter': 5.1.0
-      '@nanostores/react': 0.7.3(nanostores@0.11.3)(react@18.3.1)
-      chakra-react-select: 4.9.2(@chakra-ui/form-control@2.2.0)(@chakra-ui/icon@3.2.0)(@chakra-ui/layout@2.3.1)(@chakra-ui/media-query@3.3.0)(@chakra-ui/menu@2.2.1)(@chakra-ui/spinner@2.1.0)(@chakra-ui/system@2.6.2)(@emotion/react@11.13.3)(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)
-      framer-motion: 10.18.0(react-dom@18.3.1)(react@18.3.1)
-      lodash-es: 4.17.21
-      nanostores: 0.11.3
-      overlayscrollbars: 2.10.0
-      overlayscrollbars-react: 0.5.6(overlayscrollbars@2.10.0)(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-i18next: 15.0.2(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1)
-      react-icons: 5.3.0(react@18.3.1)
-      react-select: 5.8.0(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@chakra-ui/form-control'
-      - '@chakra-ui/icon'
-      - '@chakra-ui/media-query'
-      - '@chakra-ui/menu'
-      - '@chakra-ui/spinner'
-      - '@chakra-ui/system'
-      - '@types/react'
-      - i18next
-      - react-native
-      - supports-color
-    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -7090,11 +7087,6 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
     dev: true
-
-  /new-github-issue-url@1.0.0:
-    resolution: {integrity: sha512-wa9jlUFg3v6S3ddijQiB18SY4u9eJYcUe5sHa+6SB8m1UUbtX+H/bBglxOLnhhF1zIHuhWXnKBAa8kBeKRIozQ==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
 
   /node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}

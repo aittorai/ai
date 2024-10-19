@@ -52,56 +52,56 @@ const SettingsMenu = () => {
       />
       <Portal>
         <MenuList>
-        {showUpsellMenu && (
-          <MenuGroup title={t('upsell.professional')}>
-            <SettingsUpsellMenuItem menuText={t('upsell.inviteTeammates')} menuIcon={PiUsersBold} />
-            <SettingsUpsellMenuItem menuText={t('upsell.shareAccess')} menuIcon={PiShareNetworkFill} />
-          </MenuGroup>
-        )}
+          {showUpsellMenu && (
+            <MenuGroup title={t('upsell.professional')}>
+              <SettingsUpsellMenuItem menuText={t('upsell.inviteTeammates')} menuIcon={PiUsersBold} />
+              <SettingsUpsellMenuItem menuText={t('upsell.shareAccess')} menuIcon={PiShareNetworkFill} />
+            </MenuGroup>
+          )}
 
-        {showCommunityMenu && (
-          <MenuGroup title={t('common.communityLabel')}>
-            {isGithubLinkEnabled && (
-              <MenuItem as="a" href={githubLink} target="_blank" icon={<RiGithubFill />}>
-                {t('common.githubLabel')}
-              </MenuItem>
-            )}
-            {isBugLinkEnabled && (
-              <MenuItem as="a" href={`${githubLink}/issues`} target="_blank" icon={<PiBugBeetleBold />}>
-                {t('common.reportBugLabel')}
-              </MenuItem>
-            )}
-            {isDiscordLinkEnabled && (
-              <MenuItem as="a" href={discordLink} target="_blank" icon={<RiDiscordFill />}>
-                {t('common.discordLabel')}
-              </MenuItem>
-            )}
-          </MenuGroup>
-        )}
+          {showCommunityMenu && (
+            <MenuGroup title={t('common.communityLabel')}>
+              {isGithubLinkEnabled && (
+                <MenuItem as="a" href={githubLink} target="_blank" icon={<RiGithubFill />}>
+                  {t('common.githubLabel')}
+                </MenuItem>
+              )}
+              {isBugLinkEnabled && (
+                <MenuItem as="a" href={`${githubLink}/issues`} target="_blank" icon={<PiBugBeetleBold />}>
+                  {t('common.reportBugLabel')}
+                </MenuItem>
+              )}
+              {isDiscordLinkEnabled && (
+                <MenuItem as="a" href={discordLink} target="_blank" icon={<RiDiscordFill />}>
+                  {t('common.discordLabel')}
+                </MenuItem>
+              )}
+            </MenuGroup>
+          )}
 
-        {showSettingsMenu && (
-          <MenuGroup title={t('common.settingsLabel')}>
-            <HotkeysModal>
-              <MenuItem as="button" icon={<PiKeyboardBold />}>
-                {t('common.hotkeysLabel')}
-              </MenuItem>
-            </HotkeysModal>
-            <SettingsModal>
-              <MenuItem as="button" icon={<PiToggleRightFill />}>
-                {t('common.settingsLabel')}
-              </MenuItem>
-            </SettingsModal>
-          </MenuGroup>
-        )}
-        {showAboutMenu && (
-          <MenuGroup title={t('accessibility.about')}>
-            <AboutModal>
-              <MenuItem as="button" icon={<PiInfoBold />}>
-                {t('accessibility.about')}
-              </MenuItem>
-            </AboutModal>
-          </MenuGroup>
-        )}
+          {showSettingsMenu && (
+            <MenuGroup title={t('common.settingsLabel')}>
+              <HotkeysModal>
+                <MenuItem as="button" icon={<PiKeyboardBold />}>
+                  {t('common.hotkeysLabel')}
+                </MenuItem>
+              </HotkeysModal>
+              <SettingsModal>
+                <MenuItem as="button" icon={<PiToggleRightFill />}>
+                  {t('common.settingsLabel')}
+                </MenuItem>
+              </SettingsModal>
+            </MenuGroup>
+          )}
+          {showAboutMenu && (
+            <MenuGroup title={t('accessibility.about')}>
+              <AboutModal>
+                <MenuItem as="button" icon={<PiInfoBold />}>
+                  {t('accessibility.about')}
+                </MenuItem>
+              </AboutModal>
+            </MenuGroup>
+          )}
         </MenuList>
       </Portal>
     </Menu>

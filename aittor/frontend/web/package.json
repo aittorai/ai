@@ -1,10 +1,8 @@
 {
   "name": "@aittorai/ui",
-  "private": true,
   "version": "0.0.16",
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "main": "./dist/app-ui.umd.js",
   "module": "./dist/app-ui.es.js",
@@ -78,7 +76,6 @@
     "lru-cache": "^11.0.1",
     "nanoid": "^5.0.7",
     "nanostores": "^0.11.3",
-    "new-github-issue-url": "^1.0.0",
     "overlayscrollbars": "^2.10.0",
     "overlayscrollbars-react": "^0.5.6",
     "perfect-freehand": "^1.2.2",

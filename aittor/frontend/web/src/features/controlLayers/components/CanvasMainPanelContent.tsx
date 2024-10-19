@@ -1,6 +1,7 @@
 import { ContextMenu, Flex, IconButton, Menu, MenuButton, MenuList } from '@aittorai/ui-library';
 import { useAppSelector } from 'app/store/storeHooks';
 import { useFocusRegion } from 'common/hooks/focus';
+import { AppCanvasComponent } from 'features/controlLayers/components/AppCanvasComponent';
 import { CanvasAlertsPreserveMask } from 'features/controlLayers/components/CanvasAlerts/CanvasAlertsPreserveMask';
 import { CanvasAlertsSelectedEntityStatus } from 'features/controlLayers/components/CanvasAlerts/CanvasAlertsSelectedEntityStatus';
 import { CanvasAlertsSendingToGallery } from 'features/controlLayers/components/CanvasAlerts/CanvasAlertsSendingTo';
@@ -9,7 +10,6 @@ import { CanvasContextMenuSelectedEntityMenuItems } from 'features/controlLayers
 import { CanvasDropArea } from 'features/controlLayers/components/CanvasDropArea';
 import { Filter } from 'features/controlLayers/components/Filters/Filter';
 import { CanvasHUD } from 'features/controlLayers/components/HUD/CanvasHUD';
-import { AppCanvasComponent } from 'features/controlLayers/components/AppCanvasComponent';
 import { StagingAreaIsStagingGate } from 'features/controlLayers/components/StagingArea/StagingAreaIsStagingGate';
 import { StagingAreaToolbar } from 'features/controlLayers/components/StagingArea/StagingAreaToolbar';
 import { CanvasToolbar } from 'features/controlLayers/components/Toolbar/CanvasToolbar';
